@@ -1,52 +1,229 @@
-nav,
-main,
-footer {
-	width: 80%;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 850px;
 	margin: 0 auto;
 }
 
+header,
 nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 50px;
+	display: inline-block;
+	vertical-align: middle;
 }
-nav ul {
-	display: flex;
+
+header {
+	width: 30%;
+}
+
+nav {
 	width: 70%;
-	justify-content: space-around;
 }
 
-footer {
+ul {
 	display: flex;
-	/* height: 150px; */
-	align-items: center;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
-nav ul li,
-footer ul li {
+li {
 	list-style: none;
 }
 
-footer .image-container {
-	height: 150px;
-	width: 25%;
+li a {
+	color: black;
 }
 
-.footer-img {
+.hero {
+	background-color: #495e57;
+	height: 300px;
+	margin: 3rem 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.article {
+	margin-top: 2rem;
+	width: 350px;
+}
+
+.title {
+	font-size: 48px;
+	font-family: 'Manrope', sans-serif;
+	color: #f4ce14;
+}
+
+.subtitle,
+.description {
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+
+.reserve-table {
+	background-color: #f4ce14;
+	padding: 1em;
+	border: none;
+	border-radius: 10px;
+}
+
+.server-img {
 	height: 100%;
+	margin-top: 2rem;
 }
 
-.links {
+.specials {
+	margin-top: 5em;
+}
+
+.special-header {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 2em;
+}
+
+.special-header h1 {
+	font-size: 32px;
+	width: 450px;
+}
+
+.special-header button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	padding: 1em;
+}
+
+.special-menus {
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Manrope', sans-serif;
+}
+
+.menu {
+	width: 260px;
+	height: 400px;
+	background-color: #edefee;
+	border-radius: 10px 10px 0 0;
+}
+
+.menu-img {
+	height: 160px;
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+.title-price,
+.menu-description,
+.delivery {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.title-price,
+.delivery {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.menu-title,
+.menu-price {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.menu-title {
+	width: 70%;
+}
+
+.menu-price {
+	color: #ee9972;
+}
+
+.menu-description {
+	font-size: 14px;
+	height: 100px;
+}
+
+.delivery p {
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.testimonials{
+	height: 400px;
+	background-color: aliceblue;
+	margin:2em 0 ;
+}
+
+.testimonials-header{
+	padding: 1em 0;
+	text-align: center;
+	font-family: 'Manrope', sans-serif;
+}
+
+.testimonials-cards{
 	display: flex;
 	justify-content: space-between;
 }
-.doormat-nav,
-.contacts,
-.social-links {
-	width: 25%;
+
+.testimonial-card{
+	height: 250px;
+	width: 250px;
+	margin: .5em;
+	border: 1px solid black;
 }
 
-footer h3 {
-	text-align: center;
+.testimonial-card-header{
+	display: flex;
+	margin: .5em;
+}
+
+.customer-img-container img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin-right: 1em;
+}
+
+.customer-name{
+	font-weight: bold;
+}
+
+.customer-review{
+	padding: .5em;
+}
+
+.bk-title{
+	font-size: 48px;
+	font-family: 'Manrope', sans-serif;
+}
+
+.bk-subtitle,.bk-description{
+	font-size: 18px;
+	margin-bottom: 1em;
+}
+
+.backstory{
+	height: 400px;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 2em;
+}
+
+.bk-description{
+	padding-right: 5em;
+}
+
+.bk-restaurant{
+	width: 40%;
+	height: 100%;
 }
